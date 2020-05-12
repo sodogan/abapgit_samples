@@ -1,61 +1,29 @@
-# SAP Code Style Guides
+# ABAP Sample Code for SCP Cloud 
 
-[**Continuous Release**](#continuous-release)
+[**Prerequisite**](#continuous-release)
 &nbsp;·&nbsp;
-[**Open Source**](#open-source)
+[**ABAPGIT Project**](#abapgit-project)
 &nbsp;·&nbsp;
-[**Grassroots Project**](#grassroots-project)
-&nbsp;·&nbsp;
-[**Optional**](#optional)
 
-This repository provides SAP's style guides for coding.
+This repository provides a sample database table and a class to load data into the table
 
-Programming languages enable us to say the same thing in different ways.
-While all of them may be correct, some may be more efficient,
-easier to understand, and more robust than others.
+Please make sure you have Abapgit installed either on Eclipse or to your system of access.
 
-Our style guides want to show up differences and guide you
-towards code that has a healthy balance between all of these qualities.
 
-## Style Guides
+## AbapGit plugin
 
-- [**Clean ABAP**](clean-abap/CleanABAP.md)
-
-## Continuous Release
-
-These guides are updated **continuously**,
+First go to the websitThese guides are updated **continuously**,
 meaning any change is reviewed and immediately put "live",
 without special publication versions.
 
-As programming languages and our understanding of them evolve,
-we believe that these guides are "work in progress"
-and will probably never see a status "finished";
-as agile developers, we welcome this.
+**Launch Eclipse with ADT** installed.
+In Eclipse, choose Help > **Install New Software** in the menu bar.
+On Available Software window, 
+add the URL **http://eclipse.abapgit.org/updatesite/** and hit enter to display the available software's. ...
+Click Next.
+On Review Licenses window, accept the license and click Finish.
 
 ## Open Source
-
 This repository is **open source**,
 meaning it is written by a loose community of interested persons,
 and anybody from within and without SAP is invited to contribute.
-
-
-@EndUserText.label : 'Table Booking'
-@AbapCatalog.enhancementCategory : #NOT_EXTENSIBLE
-@AbapCatalog.tableCategory : #TRANSPARENT
-@AbapCatalog.deliveryClass : #A
-@AbapCatalog.dataMaintenance : #LIMITED
-define table zsamplebooking {
-  key client         : abap.clnt not null;
-  key booking        : abap.int4 not null;
-  customername       : abap.char(50);
-  numberofpassengers : abap.int2;
-  emailaddress       : abap.char(50);
-  country            : abap.char(50);
-  dateofbooking      : timestampl;
-  dateoftravel       : timestampl;
-  @Semantics.amount.currencyCode : 'ztbooking_id.currencycode'
-  cost               : abap.curr(15,2);
-  currencycode       : abap.cuky;
-  lastchangedat      : timestampl;
-
-}

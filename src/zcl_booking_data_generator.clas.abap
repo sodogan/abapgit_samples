@@ -1,3 +1,9 @@
+*/*
+* Sample code to be used for Demo purposes
+* Open to extension only for users of MichaelManagement
+* version 1.0
+* Inserts sample data into the zsamplebooking table
+*/
 CLASS zcl_booking_data_generator DEFINITION
   PUBLIC
   FINAL

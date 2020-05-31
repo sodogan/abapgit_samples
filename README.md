@@ -5,10 +5,6 @@
 [**ABAPGIT Project**](#abapgit-project)
 &nbsp;·&nbsp;
 
-This repository provides a sample database table and a class to load data into the table
-
-Please make sure you have Abapgit installed either on Eclipse or to your system of access.
-
 
 ## AbapGit plugin
 
@@ -23,7 +19,8 @@ add the URL **http://eclipse.abapgit.org/updatesite/** and hit enter to display 
 Click Next.
 On Review Licenses window, accept the license and click Finish.
 
-## Open Source
-This repository is **open source**,
-meaning it is written by a loose community of interested persons,
-and anybody from within and without SAP is invited to contribute.
+## Description
+This repository provides a sample database table zsamplebooking and a class that loads sample data into this table
+
+Please make sure you have Abapgit installed either on Eclipse or to your system of access.
+
